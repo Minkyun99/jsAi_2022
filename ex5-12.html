@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이동</title>
+    <style>
+        div {
+            height: 220px;
+            width: 200px;
+        }
+        [class^="tran"] {
+            border: 4px solid tomato;
+            margin: 50px;
+        }
+        .transformed1:hover {
+            background: #c2fecc;
+            border-radius: 30px 10px 30px 10px;
+            transition: 1s ease-in-out;
+        }
+        .transformed1:hover {
+            transform: translateY(100px);
+        }
+        .transformed2:hover {
+            background: #aea9fe;
+            border-radius: 10px 30px 10px 30px;
+            transition: 3s linear;
+            transform: translateX(100px);
+        }
+        .transformed3:hover {
+            background: #f9fea9;
+            border-radius: 30px 10px 30px 10px;
+            transition: 5s ease-out;
+            transform: translate(100px, -50px);
+        }
+        .transformed4:hover {
+            background: #fea9a9;
+            border-radius: 10px 30px 10px 30px;
+            transition: 7s ease-in;
+            transform: translate(50px, 50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="transformed1">가</div>
+        <div class="transformed2">나</div>
+        <div class="transformed3">다</div>
+        <div class="transformed4">라</div>
+    </div>
+</body>
+</html>

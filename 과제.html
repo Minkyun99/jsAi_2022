@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공</title>
+    <style>
+        .container {
+            margin: 200px;
+            height: 800px;
+            transition: all 0.01s;
+        }
+
+        .tri {
+            width: 0px;
+            height: 0px;
+            border-bottom: 288px solid #3d91ff;
+            border-left: 0px solid transparent;
+            border-right: 192px solid transparent;
+            transform: translateY(300px);
+        }
+
+        .roun {
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            background: #ff3df8;
+        }
+        p {
+            text-align: center;
+           }
+
+        input:checked+ .roun {
+            animation: mymove 4s infinite;
+        }
+
+        @keyframes mymove {
+            0% {
+                transform: translate(0, 0);
+                animation: 0.5s ease-in-out;
+            }
+
+            25% {
+                transform: translate(0, 330px);
+                animation: 0.8s ease-in-out;
+            }
+
+            50% {
+                transform: translate(180px, 600px) rotate(720deg);
+                animation: 0.5s ease-in-out;
+            }
+
+            75% {
+                transform: translate(400px, 600px) rotate(1440deg);
+                animation: ease-in-out;
+                opacity: 100%;
+            }
+
+            100% {
+                transform: translate(0, 0);
+                animation: ease-in-out;
+                opacity: 0%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="checkbox">
+
+        <p class="roun">공</p>
+
+        <p class="tri"></p>
+    </div>
+</body></html>

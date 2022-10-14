@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공</title>
+    <style>
+        div {
+            background: #bebdfe;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            animation: mymove 2.6s infinite alternate;
+        }
+        
+        @keyframes mymove {
+            0% {
+                transform: translate(0, 0);
+                transform: scaleY(1);
+                animation: 1s linear;
+            }
+/*
+            25% {   
+                animation: linear;
+            }
+*/
+        
+            50% {
+                transform: translate(0, 690px) scaleY(0.99);
+                animation: 0.1s linear;
+            }
+            51% {
+                transform: translate(0, 700px) scaleY(0.93);
+                border-radius: 100px 100px 85px 85px;
+                animation: 0.1s linear;
+            }
+/*
+            52% {
+               transform: translate(0, 700px) scale(0.9, 1.1);
+                border-radius: 100px 100px 98px 98px;
+                animation: 0.2s linear; 
+            }
+*/
+/*
+            75% {
+                transform: translate(0, -500px);
+                animation: 0.2 linear;
+                transform: scaleY(1.01)
+*/
+            }
+            100% {
+                transform: translate(0, 10) scale(0.5, 1.2);
+                animation: 1.5s linear
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

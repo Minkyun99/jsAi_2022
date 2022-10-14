@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>복합선택자</title>
+    <style>
+        div .c1, #p1 {
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Heding</h1>
+    <div class="c1">
+        <p>child 1</p>
+        <p>child 2</p>
+        <div>
+        <p class="c1">grandcild</p>
+        </div>
+    </div>
+    <p id="p1">neighborgood child</p>
+</body>
+</html>
+
+

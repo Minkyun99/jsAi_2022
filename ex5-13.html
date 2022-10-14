@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moving menu</title>
+    <style>
+        h3 {
+            margin: 20px;
+        }
+        .container {
+            width: 300px;
+            height: 200px;
+            }
+        
+        .container div {
+            width: 250px;
+            border: 1px solid white;
+            padding: 10px;
+            font: 20px times;
+            background: #c2defe;  
+            border-radius: 5px 20px 5px 20px;
+            text-indent: 10px
+        }
+        
+        .container div:hover {
+            width: 400px;
+            transition:0.3s linear;
+            transform-origin: left translate(100px);
+            border: 3px solid #5191ff;
+        }
+    </style>
+</head>
+<body>
+    <h3>Moving Menu</h3>
+    <ul class="container">
+        <li><a herf>Company</a></li>
+        <li><a herf>Product</a></li>
+        <li><a herf>Service</a></li>
+        <li><a herf>Customer</a></li>
+        <li><a herf>Comunity</a></li>
+    </ul>
+    
+    <div class="container">
+        <div class="moving1">Company</div>
+        <div class="moving2">Product</div>
+        <div class="moving3">Service</div>
+        <div class="moving4">Customer Support</div>
+        <div class="moving5">Comunity</div>
+    </div>
+</body>
+</html>

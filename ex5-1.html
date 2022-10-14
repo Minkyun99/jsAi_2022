@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구조적 선택자</title>
+    <style>
+        div p:first-child {
+            color: red;
+            padding: 5px;
+            background-color: beige;
+        }
+
+        span p:last-child {
+            color: azure;
+            padding: 5px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>첫번째 입니다.</p>
+        <p>두번째 입니다.</p>
+        <p>세번째 입니다.</p>
+    </div>
+
+    <p> </p>
+
+    <span>
+        <p>네번째 입니다.</p>
+        <p>다섯번째 입니다.</p>
+        <p>여섯번째 입니다.</p>
+    </span>
+
+</body></html>
