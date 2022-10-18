@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스 응용</title>
+    <style>
+        a href:visited{
+color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>기존체크박스</h2>
+        <input type="checkbox" id="hint">힌트포함</input>
+        <input type="checkbox" id="img">이미지포함</input>
+        <input type="checkbox" id="exp">설명포함</input>
+    </div>
+    <hr/>
+    <div>
+        <h2>클릭영역을 확장한 체크박스</h2>
+        <label for="hint2">
+            <input type="checkbox" id="hint2"></input>힌트포함</label>
+        <label for="img2">
+            <input type="checkbox" id="img2"></input>이미지포함</label>
+        <label for="exp2">
+            <input type="checkbox" id="exp2"></input>설명포함</label>
+    </div>
+    <hr/>
+    <div>
+        <h2>클릭영역을 확장한 체크박스(커서추가)</h2>
+        <label style="cursor:pointer" for="hint3">
+            <input type="checkbox" id="hint3"></input><a href="#">힌트포함</a></label>
+        <label for="img3" style="cursor:pointer">
+            <input type="checkbox" id="img3"></input><a href="#">이미지포함</a></label>
+        <label for="exp3" style="cursor:pointer">
+            <input type="checkbox" id="exp3"></input><a href="#">설명포함</a></label>
+    </div>
+</body>
+</html>

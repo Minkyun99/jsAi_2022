@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+
+    <style>
+        .title {
+            text-align: center;
+        }
+
+        .title .maintext {
+            font-size: 2.5rem;
+            color: var(--purple-);
+        }
+        .title .subtext {
+            font-size: 0.9rem;
+            font-weight: 100;
+        }
+
+        html, body {
+            /* overflow: hidden; */
+               
+    }
+
+        body>div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+      
+
+        img {
+            width: 50%;
+            height: 50%;
+            margin-bottom: 20px;
+            background: linearGradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 
+        rgba(255, 255, 255, 0.5) 25%, 
+        rgba(255, 255, 255, 0.7) 40%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.8) 100%
+        ),
+        url ("/img/지브리 콜라주.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 30px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem;
+        }
+
+        .form input {
+            padding: 15px 0;
+            margin: 0 10px;
+            border: none;
+            outline: none;
+            appearance: none;
+            background-color: var(--background-purple-);
+            font-size: 1rem;
+        }
+
+        .form input:not([type="submit"]) {
+            color: white;
+            border-bottom: 1px solid var(--border-);
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .form input:focus {
+            border-color: #fff;
+        }
+
+        .form input[type="submit"] {
+            color: white;
+            background-color: var(--darkpurple-);
+            border-radius: 20px;
+            margin-top: 2rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .form input[type="submit"]:active {
+            background-color: var(--purple-);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="/img/지브리 콜라주.png" alt="사진없음" class="login"></div>
+    <!-- /최상위
+        ./ 현재
+        ../ 한단계 위 -->
+        <div class="title">
+            <h1 class="maintext">Nexflix</h1>
+            <p class="subtext">새로운 OTT 지금 가입하면 무료!!</p>
+        </div>
+        <form action="find.html" class="form">
+        <input type="id" name="username" autocomplete="off" placeholder="ID" required>
+        <input type="password" name="password" autocomplete="off" placeholder="PASSWORD" required>
+        <input type="submit" value="접속하기">
+    </form>
+        
+    
+</body>
+</html>

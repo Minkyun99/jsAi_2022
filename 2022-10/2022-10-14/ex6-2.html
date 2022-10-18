@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그리드 나누기</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            display: flex;
+            font: 20px times;
+
+        }
+
+        .header {
+            background: #b2d1ff;
+            width: 680px;
+            height: 100px;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            white-space: pre;
+        }
+
+        .header:hover {
+            background: #548efc;
+        }
+
+
+        .container2 {
+            display: flex;
+        }
+
+        .main1 {
+            margin-top: 20px;
+            width: 150px;
+            height: 440px;
+            background: #febdbd;
+            border-radius: 10px;
+            padding: 20px;
+            overflow: hidden;
+            white-space: pre-wrap;
+            text-overflow: ellipsis;
+        }
+
+        .main1:hover {
+            width: 200px;
+            background: #ff7a7a;
+            transition: 0.3s linear;
+            transform-origin: translate(100px);
+            padding: 20px;
+        }
+
+
+        .main2 {
+            margin-top: 20px;
+            width: 255px;
+            height: 190px;
+            background: #fef5bd;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            overflow: hidden;
+            white-space: pre-wrap;
+            text-overflow: ellipsis;
+        }
+
+        .main2:hover {
+            width: 300px;
+            background: #fffa7a;
+            transition: 0.3s linear;
+            transform-origin: translate(100px);
+        }
+
+        .main3 {
+            margin-top: 20px;
+            width: 255px;
+            height: 190px;
+            background: #c4febd;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            overflow: hidden;
+            white-space: pre-wrap;
+            text-overflow: ellipsis;
+        }
+
+        .main3:hover {
+            width: 300px;
+            background: #92ff6b;
+            transition: 0.3s linear;
+            transform-origin: translate(100px);
+        }
+
+        .main4 {
+            margin: 20px 0 0 20px;
+            width: 150px;
+            height: 440px;
+            background: #bdbffe;
+            border-radius: 10px;
+            padding: 20px;
+            overflow: hidden;
+            white-space: pre-wrap;
+            text-overflow: ellipsis;
+        }
+
+        .main4:hover {
+            width: 200px;
+            background: #836bff;
+            transition: 0.3s linear;
+            transform-origin: translate(100px);
+        }
+
+        .footer {
+            background: #fabdfe;
+            width: 680px;
+            height: 100px;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 20px;
+            overflow: hidden;
+            white-space: pre-wrap;
+            text-overflow: ellipsis;
+        }
+
+        .footer:hover {
+            background: #e054fc;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"><strong>로스트아크 직업정리편</strong>
+
+바드, 홀리나이트, 소서리스, 건슬링어
+        </div>
+        <div class="container2">
+            <div class="main1"><b>바드</b>
+바드는 성스러운 하프를 이용하여 적을 공격하거나 아군을 서포트하는 원거리 서포트형 클래스입니다. 날카로운 음율로 적을 공격하기도 하고, 아름다운 운율로 아군을 치유하며, 파티에서는 선봉보다는 후방에서 아군을 돕거나 각종 버프를 이용해 아군을 지원하는 역할을 수행할 수 있습니다. 공격력은 다소 낮은 편이지만 아군을 지원하는 능력이 매우 뛰어나기 때문에 파티에서 꼭 필요로 하는 클래스 입니다.</div>
+            <div>
+                <div class="main2"><b>홀리나이트</b>
+"빛의 수호자여, 신의 이름으로 세상을 심판하라!" 홀리나이트는 신념의 검과 신앙의 힘을 사용하는 서포트형 클래스입니다. 성서를 이용한 신성 스킬 및 버프를 활용해 아군을 후방에서 지원하거나 검을 이용한 징벌 스킬들을 통해 전장의 선봉에 설 수 있습니다.</div>
+                <div class="main3"><b>소서리스</b>
+ "자연의 섭리를 깨달은 자, 전장을 지배하리라!" 소서리스는 세 가지 원소를 기본으로 한 강력한 마법을 다루는 클래스입니다. 소서리스는 광역 마법을 사용해 다수의 적을 손쉽게 처리할 수 있으며, 캐스팅 마법으로 강력한 적에게 높은 피해를 선사할 수도 있습니다. 신비한 마력 게이지를 획득해 얻을 수 있는 아이덴티티를 잘 활용한다면 전장을 지배하는 영웅이 될 수 있습니다.</div>
+            </div>
+            <div class="main4"><b>건슬링어</b>
+"총 앞에서는, 모두가 솔직해지는 법이지" 건슬링어는 세 가지 총기를 사용하여 빠르게 움직이며 스타일리쉬한 전투를 펼치는 원거리 클래스 입니다. 대상과의 거리, 혹은 공격하고자 하는 범위에 따라 그에 알맞은 스탠스를 선택하여 더블 핸드건, 샷건, 라이플로 가장 효과적인 전투를 만들어 낼 수 있습니다.</div>
+        </div>
+        <div class="footer"><b>마지막으로...</b>
+오늘도 평화로운 로아의 세계로 떠나겠습니다.</div>
+    </div>
+</body></html>
