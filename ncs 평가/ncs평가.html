@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 600px;
+            background-color: white;
+        }
+
+        .header {
+            background-color: rgb(201, 154, 255);
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .header:hover {
+            background: #d66eff;
+        }
+
+        .container2 {
+            display: flex;
+         }
+
+         .nav {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(255, 188, 101);
+            width: 150px;
+            height: 300px;
+            border-radius: 10px;
+         }
+
+         .nav:hover {
+            background: #ffa550;
+        }
+
+         .article {
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 10px;
+            background-color: rgb(255, 253, 160);
+            width: 440px;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+         }
+
+         .article:hover {
+            background: #ffd755;
+        }
+
+         .table {
+            width: 400px;
+           border: 1px solid black;
+         }
+        
+         th, td {
+            border: 1px solid black;
+            padding: 10px;
+         }
+
+         .footer {
+            background-color: rgb(154, 210, 255);
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+         }
+
+         .footer:hover {
+            background: #54d5fc;
+        }
+
+         .list {
+            list-style-type: none;
+         }
+
+         .list li:hover {
+            transform: translate(5px) scale(1.1);
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="container2">
+            <div class="nav">nav
+                <ul class="list">
+                    <li><a href="./ncs평가.html">메인</a></li>
+                    <li><a href="./로그인.html">로그인</a></li>
+                    <li><a href="./회원가입.html">회원가입</a></li>
+                </ul>
+            </div>
+            <div class="article">article  
+                <table class="table">
+                    <tr>
+                        <th>번호</th>
+                        <th>아이디</th>
+                        <th>이름</th>
+                        <th>연락처</th>
+                        <th>이메일</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>아이디1</td>
+                        <td>이름1</td>
+                        <td>010</td>
+                        <td>a1@b.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>아이디2</td>
+                        <td>이름2</td>
+                        <td>010</td>
+                        <td>a2@b.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>아이디3</td>
+                        <td>이름3</td>
+                        <td>010</td>
+                        <td>a3@b.com</td>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+        <div class="footer">footer</div>   
+    </div>
+    
+</body>
+</html>
