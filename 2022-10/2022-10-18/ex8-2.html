@@ -5,22 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이콘</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"> -->
+      <link rel="stylesheet" href="./css/find.css">
+      <link rel="stylesheet" href="./css/global.css">
     <style>
-    .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-    }
+            @MEDIA (max-width: 2500PX) {
+            BODY{background-color: var(--background-purple-);}
+            .best-movie__img:hover {transform: translateY(-20px) scale(1.1);}
+            .best-movie__img-container span:hover {transform: translateY(-20px) scale(1.5);}
+            .best-movie__img-container span {font-size: 10rem; bottom: 3.2rem;}
+            }
+
+        @MEDIA (max-width: 1280PX) {
+            BODY{background-color: black;}
+            .best-movie__img:hover {transform: translateY(-20px) scale(1.1);}
+            .best-movie__img-container span:hover {transform: translateY(-20px) scale(1.5);}
+            .best-movie__img-container span {font-size: 7rem; bottom: 3.2rem;}
+        }
+        @media (max-width: 600px) {
+            body {background-color: cadetblue;}
+            .best-movie__img:hover {transform: translateY(-20px) ;}
+            .best-movie__img-container span {font-size: 5rem; bottom: 3.2rem;}
+        }
+
+    .material-icons-outlined.md-18 {font-size: 18px;}
+    .material-icons-outlined.md-24 {font-size: 24px;}
+    .material-icons-outlined.md-36 {font-size: 36px;}
+    .material-icons-outlined.md-48 {font-size: 48px;}
 </style>
     </style>
 </head>
 <body>
-    <span class="material-icons-outlined">
-        wifi
-        </span>
-
+    <span class="material-icons-outlined.md-48"></span>
+    <form action="" class="find-search-bar-form">
+        <div class="display-flex-center position-relative">
+            <input class="find-search-bar" placeholder="검색하기">
+            <span class="material-icons-outlined md-48"> search </span>
+        </div>
+    </form>
+    <div class="best-movie position-relative">
+        <div class="best-movie__img-container">
+            <img src="/img/하울의.jpg" alt="사진없음" class="best-movie__img">
+            <span class="material-icons"> play_arrow </span>
+        </div>
+        <div class="best-movie__title">
+            <p class="best-movie__promotion-title">지금 가장 흥행하는 작품은?</p>
+            <span class="best-movie__movie-name">하울의 움직이는 성</span>
+        </div>
+    </div>
+    <div class="movie-recommendation">
+        <span class="movie-recommendation__title">다른 작품 보기 ></span>
+        <ul class="movie-recommendation__imges">
+            <li>
+                <img src="/img/img1.jpg" alt="사진없음">
+            </li>
+            <li>
+                <img src="/img/img2.jpg" alt="사진없음">
+            </li>
+            <li>
+                <img src="/img/img4.png" alt="사진없음">
+            </li>
+        </ul>
+    </div>
+    <div class="navigation-bar">
+        <a href="./ex8-1.html">
+            <span class="material-icons-outlined find-icons-clicked">search</span>
+        </a>
+        <a href="./ex8-3.html">
+            <span class="material-icons-outlined">person_outline</span>
+        </a>
+    </div>
 </body>
 </html>
